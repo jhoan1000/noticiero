@@ -32,7 +32,7 @@
       <?php
         include("secciones/portada.php");
       ?>
-      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+      <div class="jumbotron p-3 p-md-5 text-white rounded bg-warning">
         <div class="col-md-12 px-0">
           <h1 class="display-4 font-italic">
             <?php
@@ -222,7 +222,7 @@
       <!-- Fila 4 -->
       <?php
         include("secciones/cultura.php");
-        include("secciones/gente.php");
+        // include("secciones/gente.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
