@@ -60,7 +60,7 @@
       <div class="row mb-2">
         <div class="col-md-6">
         <div class="card flex-md-row mb-4 shadow-sm">
-          <img src="<?php echo $internacional['imagen']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+          <img src="<?php echo $internacional['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
           <div class="card-body d-flex flex-column align-items-start col-md-12">
             <strong class="d-inline-block mb-2 text-primary">Internacional</strong>
             <h3 class="mb-0">
@@ -79,7 +79,7 @@
       </div>
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
-            <img src="<?php echo $nacional['imagen']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <img src="<?php echo $nacional['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Nacional</strong>
               <h3 class="mb-0">
