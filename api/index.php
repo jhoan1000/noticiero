@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="./icon.ico">
 
     <title>DIARIO EL HOCICÓN</title>
 
@@ -44,6 +44,11 @@
               echo $portada["resumen"];
             ?>
           </p>
+          <p class="lead my-0">
+            <?php
+              echo $portada["autor"];
+            ?>
+          </p>
         </div>
       </div>
 
@@ -54,31 +59,27 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
-            <div class="card-body d-flex flex-column align-items-start col-md-12">
-              <strong class="d-inline-block mb-2 text-primary">Internacional</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="#">
-                  <?php
-                    echo $internacional["titulo"];
-                  ?>
-                </a>
-              </h3>
-              <div class="mb-1 text-muted">
-                <?php
-                  echo $internacional["autor"];
-                ?>
-              </div>
-              <p class="card-text mb-auto">
-                <?php
-                  echo $internacional["resumen"];
-                ?>
-              </p>
+        <div class="card flex-md-row mb-4 shadow-sm">
+          <img src="<?php echo $internacional['imagen']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+          <div class="card-body d-flex flex-column align-items-start col-md-12">
+            <strong class="d-inline-block mb-2 text-primary">Internacional</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">
+                <?php echo $internacional["titulo"]; ?>
+              </a>
+            </h3>
+            <div class="mb-1 text-muted">
+              <?php echo $internacional["autor"]; ?>
             </div>
+            <p class="card-text mb-auto">
+              <?php echo $internacional["resumen"]; ?>
+            </p>
           </div>
         </div>
+      </div>
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <img src="<?php echo $nacional['imagen']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Nacional</strong>
               <h3 class="mb-0">
