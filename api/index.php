@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -59,45 +58,43 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-        <div class="card flex-md-row mb-4 shadow-sm">
-          <img src="<?php echo $internacional['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
-          <div class="card-body d-flex flex-column align-items-start col-md-12">
-            <strong class="d-inline-block mb-2 text-primary">Internacional</strong>
-            <h3 class="mb-0">
-              <a class="text-dark" href="#">
-                <?php echo $internacional["titulo"]; ?>
-              </a>
-            </h3>
-            <div class="mb-1 text-muted">
-              <?php echo $internacional["autor"]; ?>
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($internacional['image'])): ?>
+              <img src="<?php echo $internacional['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
+            <div class="card-body d-flex flex-column align-items-start col-md-12">
+              <strong class="d-inline-block mb-2 text-primary">Internacional</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">
+                  <?php echo $internacional["titulo"]; ?>
+                </a>
+              </h3>
+              <div class="mb-1 text-muted">
+                <?php echo $internacional["autor"]; ?>
+              </div>
+              <p class="card-text mb-auto">
+                <?php echo $internacional["resumen"]; ?>
+              </p>
             </div>
-            <p class="card-text mb-auto">
-              <?php echo $internacional["resumen"]; ?>
-            </p>
           </div>
         </div>
-      </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
-            <img src="<?php echo $nacional['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($nacional['image'])): ?>
+              <img src="<?php echo $nacional['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Nacional</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $nacional["titulo"];
-                  ?>
+                  <?php echo $nacional["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $nacional["autor"];
-                ?>
+                <?php echo $nacional["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $nacional["resumen"];
-                ?>
+                <?php echo $nacional["resumen"]; ?>
               </p>
             </div>
           </div>
@@ -112,49 +109,43 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($economia['image'])): ?>
+              <img src="<?php echo $economia['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-secondary">Economía</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $economia["titulo"];
-                  ?>
+                  <?php echo $economia["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $economia["autor"];
-                ?>
+                <?php echo $economia["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $economia["resumen"];
-                ?>
+                <?php echo $economia["resumen"]; ?>
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($opinion['image'])): ?>
+              <img src="<?php echo $opinion['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-warning">Opinión</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $opinion["titulo"];
-                  ?>
+                  <?php echo $opinion["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $opinion["autor"];
-                ?>
+                <?php echo $opinion["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $opinion["resumen"];
-                ?>
+                <?php echo $opinion["resumen"]; ?>
               </p>
             </div>
           </div>
@@ -169,49 +160,43 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($tecnologia['image'])): ?>
+              <img src="<?php echo $tecnologia['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">Tecnología</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $tecnologia["titulo"];
-                  ?>
+                  <?php echo $tecnologia["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $tecnologia["autor"];
-                ?>
+                <?php echo $tecnologia["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $tecnologia["resumen"];
-                ?>
+                <?php echo $tecnologia["resumen"]; ?>
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($ciencia['image'])): ?>
+              <img src="<?php echo $ciencia['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Ciencia</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $ciencia["titulo"];
-                  ?>
+                  <?php echo $ciencia["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $ciencia["autor"];
-                ?>
+                <?php echo $ciencia["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $ciencia["resumen"];
-                ?>
+                <?php echo $ciencia["resumen"]; ?>
               </p>
             </div>
           </div>
@@ -222,53 +207,47 @@
       <!-- Fila 4 -->
       <?php
         include("secciones/cultura.php");
-        // include("secciones/gente.php");
+        include("secciones/nube.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($cultura['image'])): ?>
+              <img src="<?php echo $cultura['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-secondary">Cultura</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $cultura["titulo"];
-                  ?>
+                  <?php echo $cultura["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $cultura["autor"];
-                ?>
+                <?php echo $cultura["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $cultura["resumen"];
-                ?>
+                <?php echo $cultura["resumen"]; ?>
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($nube['image'])): ?>
+              <img src="<?php echo $nube['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-warning">Nube</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $nube["titulo"];
-                  ?>
+                  <?php echo $nube["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $nube["autor"];
-                ?>
+                <?php echo $nube["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $nube["resumen"];
-                ?>
+                <?php echo $nube["resumen"]; ?>
               </p>
             </div>
           </div>
@@ -280,77 +259,68 @@
       <?php
         include("secciones/deportes.php");
         include("secciones/television.php");
-        include("secciones/video.php");
+        include("secciones/uns.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($deportes['image'])): ?>
+              <img src="<?php echo $deportes['image']; ?>" class="card-img-top" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">Deportes</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $deportes["titulo"];
-                  ?>
+                  <?php echo $deportes["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $deportes["autor"];
-                ?>
+                <?php echo $deportes["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $deportes["resumen"];
-                ?>
+                <?php echo $deportes["resumen"]; ?>
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($television['image'])): ?>
+              <img src="<?php echo $television['image']; ?>" class="card-img-top" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Televisión</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $television["titulo"];
-                  ?>
+                  <?php echo $television["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $television["autor"];
-                ?>
+                <?php echo $television["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $television["resumen"];
-                ?>
+                <?php echo $television["resumen"]; ?>
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($uns['image'])): ?>
+              <img src="<?php echo $uns['image']; ?>" class="card-img-top" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
-              <strong class="d-inline-block mb-2 text-success">UNS</strong>
+              <strong class="d-inline-block mb-2 text-info">UNS</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $uns["titulo"];
-                  ?>
+                  <?php echo $uns["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $uns["autor"];
-                ?>
+                <?php echo $uns["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $uns["resumen"];
-                ?>
+                <?php echo $uns["resumen"]; ?>
               </p>
             </div>
           </div>
@@ -366,73 +336,64 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($formacion['image'])): ?>
+              <img src="<?php echo $formacion['image']; ?>" class="card-img-top" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">Formación</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $formacion["titulo"];
-                  ?>
+                  <?php echo $formacion["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $formacion["autor"];
-                ?>
+                <?php echo $formacion["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $formacion["resumen"];
-                ?>
+                <?php echo $formacion["resumen"]; ?>
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($empleo['image'])): ?>
+              <img src="<?php echo $empleo['image']; ?>" class="card-img-top" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Empleo</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $empleo["titulo"];
-                  ?>
+                  <?php echo $empleo["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $empleo["autor"];
-                ?>
+                <?php echo $empleo["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $empleo["resumen"];
-                ?>
+                <?php echo $empleo["resumen"]; ?>
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($sociedad['image'])): ?>
+              <img src="<?php echo $sociedad['image']; ?>" class="card-img-top" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
-              <strong class="d-inline-block mb-2 text-success">Sociedad</strong>
+              <strong class="d-inline-block mb-2 text-danger">Sociedad</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $sociedad["titulo"];
-                  ?>
+                  <?php echo $sociedad["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $sociedad["autor"];
-                ?>
+                <?php echo $sociedad["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $sociedad["resumen"];
-                ?>
+                <?php echo $sociedad["resumen"]; ?>
               </p>
             </div>
           </div>
@@ -447,49 +408,43 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($openstack['image'])): ?>
+              <img src="<?php echo $openstack['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">OpenStack</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $openstack["titulo"];
-                  ?>
+                  <?php echo $openstack["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $openstack["autor"];
-                ?>
+                <?php echo $openstack["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $openstack["resumen"];
-                ?>
+                <?php echo $openstack["resumen"]; ?>
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($git['image'])): ?>
+              <img src="<?php echo $git['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Git</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $git["titulo"];
-                  ?>
+                  <?php echo $git["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $git["autor"];
-                ?>
+                <?php echo $git["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $git["resumen"];
-                ?>
+                <?php echo $git["resumen"]; ?>
               </p>
             </div>
           </div>
@@ -500,53 +455,47 @@
       <!-- Fila 8 -->
       <?php
         include("secciones/contenedores.php");
-        include("secciones/openshift.php");
+        include("secciones/clasificados.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($contenedores['image'])): ?>
+              <img src="<?php echo $contenedores['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-secondary">Contenedores</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $contenedores["titulo"];
-                  ?>
+                  <?php echo $contenedores["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $contenedores["autor"];
-                ?>
+                <?php echo $contenedores["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $contenedores["resumen"];
-                ?>
+                <?php echo $contenedores["resumen"]; ?>
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <?php if (!empty($clasificados['image'])): ?>
+              <img src="<?php echo $clasificados['image']; ?>" class="card-img-top" style="width: 200px; height: 200px; object-fit: cover;" alt="Imagen noticia">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-warning">Clasificados</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
-                  <?php
-                    echo $clasificados["titulo"];
-                  ?>
+                  <?php echo $clasificados["titulo"]; ?>
                 </a>
               </h3>
               <div class="mb-1 text-muted">
-                <?php
-                  echo $clasificados["autor"];
-                ?>
+                <?php echo $clasificados["autor"]; ?>
               </div>
               <p class="card-text mb-auto">
-                <?php
-                  echo $clasificados["resumen"];
-                ?>
+                <?php echo $clasificados["resumen"]; ?>
               </p>
             </div>
           </div>
